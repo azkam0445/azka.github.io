@@ -83,7 +83,7 @@
             <button onclick="appendSymbol('7')">7</button>
             <button onclick="appendSymbol('8')">8</button>
             <button onclick="appendSymbol('9')">9</button>
-            <button onclick="appendSymbol('*')">×</button>
+            <button onclick="appendSymbol('x')">×</button>
 
             <button onclick="appendSymbol('4')">4</button>
             <button onclick="appendSymbol('5')">5</button>
@@ -119,7 +119,7 @@
 
         function calculateResult() {
             try {
-                display.value = eval(display.value.replace('×', '*').replace('÷', '/'));
+                display.value = eval(display.value.replace('×', '*').replace('÷', '/').replace('x', '*'));
             } catch (error) {
                 alert("Input tidak valid");
             }
